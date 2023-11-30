@@ -1,0 +1,290 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Rawline;
+    max-width: 1920px;
+}
+
+/* --------- Header---------- */
+
+header {
+    height: 85px;
+    border-bottom: 1px solid #000;
+}
+
+.header-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 14px;
+    height: 100%;
+}
+
+.header-menu {
+    display: none;
+}
+
+button {
+    background: #000;
+    cursor: pointer;
+
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.header-button {
+    width: 90px;
+    height: 40px;
+}
+
+button:hover {
+    opacity: .7;
+    transition: .2s;
+}
+
+.header-text {
+    color: #FF6E1F;
+
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.header-svg {
+    display: flex;
+    gap: 28px;
+}
+
+/* -------- Main ---------- */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-first-part {
+    padding: 0 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.main-second-part {
+    width: 100%;
+    padding: 0 14px;
+}
+
+.main-title {
+    color: #000;
+    width: 671px;
+    margin-top: 120px;
+
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 70px;
+}
+
+.main-text {
+    color: #000;
+    width: 906px;
+
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 52px; 
+    margin: 30px 0;
+}
+
+.main-button {
+    width: 268px;
+    height: 53px;
+
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 120px;
+}
+
+.main-img {
+    background: url(./image_1.png) no-repeat center;
+    width: 1372px;
+    height: 875px;
+}
+
+.main-line-center {
+    display: none;
+}
+
+/* -------- Footer -------- */
+
+.footer-line-bottom {
+    width: 100%;
+    height: 1px;
+    background: #000;
+    margin-bottom: 12px;
+}
+
+/* -------Media --------- */
+
+
+/* min-width: 1401px */
+
+@media (min-width: 1401px) {
+
+    .header-block {
+        padding: 0 174px;
+    } 
+
+    main {
+        flex-direction: row;
+        
+    }
+
+    .main-first-part {
+        width: 50%;
+        padding: 0 20px 0 174px;
+        display: flex;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .main-title {
+        width: 100%;
+    }
+
+    .main-text {
+        width: 100%;
+    }
+
+    .main-second-part {
+        width: 50%;
+        padding: 54px 12px;
+    }
+
+    .main-img {
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .main-line-center {
+        display: block;
+        width: 1px;
+        height: 983px;
+        background: #000;
+    }
+
+    .main-line-bottom {
+        position: absolute;
+        bottom: 0;
+        margin: 12px 0;
+    }
+}
+
+/* max-width: 1400px */
+@media (max-width: 1400px) {
+
+    .main-img {
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .footer-line-bottom {
+        margin: 54px 0;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .header-menu {
+        display: block;
+        width: 88px;
+        height: 24px;
+    } 
+
+    .header-text {
+        display: none;
+    }
+
+    .main-title {
+        margin-top: 80px;
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    .main-text {
+        padding: 0 170px;
+        font-size: 24px;
+        line-height: 44px;
+    }
+
+    .main-button {
+        width: 223px;
+        height: 45px;
+        font-size: 18px;
+        margin-bottom: 80px;
+    }
+
+}
+
+/* max-width: 768px */
+@media (max-width: 768px) {
+
+    header {
+        height: 50px;
+    }
+
+    .header-menu {
+        width: 60px;
+    }
+
+    .header-menu-img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .header-button {
+        height: 30px;
+    }
+
+    .header-svg-img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .main-title {
+        width: 100%;
+        margin-top: 0;
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .main-text {
+        width: 100%;
+        font-size: 20px;
+        line-height: 40px; 
+        margin: 20px 0 30px 0;
+        padding: 0
+    }
+
+    .main-button {
+        margin-bottom: 0;
+        width: 183px;
+    }
+
+    .main-first-part {
+        text-align: left;
+        align-items: flex-start;
+        margin: 54px 0;
+    }
+
+    .footer-line-bottom {
+        margin: 54px 0 44px 0;
+    }
+}
